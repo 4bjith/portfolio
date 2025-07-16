@@ -132,9 +132,15 @@ td{
     .home{
         flex-wrap: wrap;
     }
+    .about{
+        margin-top: 60px;
+    }
 }
 @media (min-width : 300px ){
     .home{
         flex-wrap: wrap;
+    }
+    .about{
+        margin-top: 60px;
     }
 }
