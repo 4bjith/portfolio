@@ -14,16 +14,20 @@
         <a href="/intex.html">Home</a>
         <a href="./intex.html">About me</a>
         <a href="./education.html">Education</a>
-        <a href="#">Experience</a>
-        <a href="#">Skills</a>
+        <a href="./exp-and-skills.html">Experience</a>
+        <a href="./exp-and-skills.html">Skills</a>
         <a href="#">Contact</a>
       </nav>
     </header>
     <main>
       <section class="home">
-        <img src="./ass.me.webp" />
+        <div class="profile-image">
+           <img src="./ass.me.webp" />
+        </div>
+       
         <div class="about">
-          <h1>Hi, Its Abhijith</h1>
+          <h1 class="inline-heading">Hi, It's Abhijith</h1>
+
           <h1>I am a MERN Stack Developer.</h1>
           <p>
             Talking about myself, basicaly I am a Developer and also a gamer
@@ -31,15 +35,30 @@
             And also now I can say that I am best in codding with out thinking
             twice. I think I have the adaptability where ever I go.
           </p>
-          <div class="image_logo">
+          <!-- <div class="image_logo">
             <img src="./linkedin (1).png" />
             <img src="./github.png" />
             <img src="./instagram (1).png" alt="" />
-          </div>
-          <br>
-          <input type="submit" name="hire" value="Hire Me" />
+          </div> -->
+          <br />
+          <button
+            style="
+              padding: 15px;
+              margin-top: 10px;
+              padding-left: 24px;
+              padding-right: 24px;
+              background: red;
+              color: aliceblue;
+              font-size: larger;
+              font-weight: bolder;
+            "
+            onclick="redirectToLinkedin()"
+          >
+            Hire Me
+          </button>
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -12,9 +12,10 @@ body{
     font-optical-sizing: auto;
     font-variation-settings:"wdth" 112.5;
     
+    
 }
 a{
-    text-decoration: none;
+    direction: none;
     display: flex;
     padding: 30px;
     color: azure;
@@ -26,7 +27,7 @@ a{
   font-weight: 400;
   font-style: normal;
   font-size: 50px;
-  line-gap-override: 10px;
+  /* line-gap-override: 10px; */
 }
 nav{
     display: flex;
@@ -36,13 +37,13 @@ nav{
 header{
     margin: 0%;
     padding: 0%;
-    position: fixed;
+    /* position: fixed; */
     height: 15vh;
-    width: 180vh;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100; 
+    /* z-index: 100;  */
 }
 p{
     padding: 15px;
@@ -51,19 +52,29 @@ p{
 }
 h1{
     color: aliceblue;
-    padding: 15px;
+    padding: 10px;
     font-weight: 1000;
     font-size: 40px;
+    
 }
 .home{
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* flex-wrap: wrap; */
+    /* background: cornsilk; */
 }
-.home img{
-    height: 120vh;
-    padding: 30px;
+.profile-image{
+    margin: 1px;
+    max-width: 50vw;
 }
+.profile-image img{
+    max-width: 40vw;
+    min-width: 24vw;
+}
+
 .img-edu{
     width: 60%;
     height:auto;
@@ -84,9 +95,14 @@ input{
     justify-content: center;
 }
 .about{
+    max-width: 60vh;
+    height: auto;
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
+    padding-left: 1px;
+    justify-content: center;
+    align-items: center;
+    /* background: wheat; */
 }
 table{
     background-color: transparent;
@@ -107,4 +123,18 @@ tr{
 }
 td{
     padding: 15px;
+}
+/* .inline-heading {
+  display: inline-block;
+  margin-right: 10px;
+} */
+@media (min-width : 700px ){
+    .home{
+        flex-wrap: wrap;
+    }
+}
+@media (min-width : 300px ){
+    .home{
+        flex-wrap: wrap;
+    }
 }
